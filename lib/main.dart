@@ -119,11 +119,53 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(height: 24),
+                    SizedBox(height: 50),
+                    Center(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        },
+                        child: Text('Login'.toUpperCase()),
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.red.shade900,
+                          minimumSize: Size(200, 40),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home'),
+      ),
+      body: Container(
+        color: Colors.white,
+        child: Center(
+          child: Text(
+            'Welcome to the Homepage!',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );

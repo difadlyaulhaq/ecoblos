@@ -66,8 +66,52 @@ class LoginPage extends StatelessWidget {
                           border: InputBorder.none,
                           contentPadding:
                           EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          labelText: 'Nama',
+                          hintText: 'Masukkan Nama Anda',
+                          hintStyle: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Container(
+                      width: 206,
+                      height: 42,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9),
+                        color: Color(0xFFD9D9D9),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          contentPadding:
+                          EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                           labelText: 'NIK',
                           hintText: 'Masukkan NIK Anda',
+                          hintStyle: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Container(
+                      width: 206,
+                      height: 42,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9),
+                        color: Color(0xFFD9D9D9),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          contentPadding:
+                          EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          labelText: 'Daerah',
+                          hintText: 'Masukkan daerah Anda',
                           hintStyle: TextStyle(
                             color: Colors.grey,
                             fontSize: 16,
